@@ -6,7 +6,7 @@ sudo bpftool prog detach pinned "/sys/fs/bpf/bpf_redir" msg_verdict pinned "/sys
 sudo rm "/sys/fs/bpf/bpf_redir"
 
 # UnLoad the bpf_sockops program
-sudo bpftool cgroup detach "/sys/fs/cgroup/unified/" sock_ops pinned "/sys/fs/bpf/bpf_sockop"
+sudo bpftool cgroup detach "/sys/fs/cgroup/" sock_ops pinned "/sys/fs/bpf/bpf_sockop"
 sudo rm "/sys/fs/bpf/bpf_sockop"
 
 # Delete the map
